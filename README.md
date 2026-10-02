@@ -18,15 +18,37 @@ Single HTML file. Runs in the browser with no build step, no server, no tracking
 - Not a full HTML validator. It looks at heading structure only
 - Not an accessibility audit on its own, though heading order is part of one
 
-## Use it
+## Use
 
 Open the hosted page: https://0xelitesystem.github.io/heading-outline-checker/
 
 Or download `index.html` and open it in any browser. It works offline.
 
+1. Choose HTML or Markdown.
+2. Paste your source into the Paste source box.
+3. Read the indented outline tree as it updates live.
+4. Fix the flagged issues: more than one h1, skipped levels, or empty headings.
+
+## Why this exists
+
+A broken heading structure hurts both screen-reader navigation and how search engines read a page, and it is hard to see in raw source. This tool draws the outline and flags the problems. It is one HTML file with inline CSS and JavaScript: no account, no tracking, no analytics, no external scripts or fonts, and it works offline. MIT licensed, so you can fork it, self-host it, or read every line.
+
 ## Privacy
 
-Everything runs client-side. No analytics, no cookies, no network calls, no local storage.
+Everything runs client-side. No analytics, no cookies, no network calls, and nothing you paste is stored. The only thing written to storage is your light or dark theme choice, saved in localStorage under the key `theme`.
+
+## Run locally
+
+```bash
+git clone https://github.com/0xelitesystem/heading-outline-checker
+cd heading-outline-checker
+```
+
+Then open `index.html` in any modern browser. Or serve the folder with `python -m http.server 8000` and visit http://localhost:8000.
+
+## Build
+
+No build step. The whole tool is one `index.html` with no dependencies, so there is nothing to install or compile.
 
 ## Related
 
