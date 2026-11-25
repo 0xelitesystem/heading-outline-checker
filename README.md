@@ -52,7 +52,7 @@ No build step. The whole tool is one `index.html` with no dependencies, so there
 
 ## Related
 
-- [serp-snippet-preview](https://github.com/0xelitesystem/serp-snippet-preview)
+- [serp-truncation-preview](https://github.com/0xelitesystem/serp-truncation-preview)
 - [internal-linking-hub-spoke-reference](https://github.com/0xelitesystem/internal-linking-hub-spoke-reference)
 - [accessibility-basics-reference](https://github.com/0xelitesystem/accessibility-basics-reference)
 
